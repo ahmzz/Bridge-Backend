@@ -10,3 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser())
 app.use(cors());
 app.use("/api/v1", User);
+app.get('/',(req,res)=>{
+    res.send('Server working')
+})
